@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel recommendation</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Website Name / Logo -->
+        <div class="logo-container">
+            <div class="logo">WanderWise</div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="content">
+            <h1> Explore the World with WanderWise </h1>
+
+            <p> WanderWise is a travel recommendation platform designed to help users explore
+                the beauty of the world in a simple and engaging way. <br>From peaceful temples
+                and breathtaking beaches to vibrant countries filled with culture and history,
+                WanderWise brings all travel inspirations to one place. Users can search for
+                different destinations, view recommendations with images and descriptions,
+                and discover new places based on their interests. Our goal is to make travel
+                planning easy, informative, and enjoyable while inspiring people to explore
+                the world with confidence and curiosity.
+            </p>
+
+
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"><img src="inta.svg" alt=""></i></a>
+                <a href="#"><i class="fab fa-instagram"><img src="Fb.svg" alt=""></i></a>
+                <a href="#"><i class="fab fa-twitter"><img src="twitter.svg" alt=""></i></a>
+                <a href="#"><i class="fab fa-youtube"><img src="youtube.svg" alt=""></i></a>
+            </div>
+
+        </div>
+        <div id="results" class="results">
+        </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

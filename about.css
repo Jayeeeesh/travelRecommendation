@@ -1,0 +1,160 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background-image: url('beautiful-nature-landscape-with-black-sandy-beach-ocean.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #100707;
+}
+
+/* Navbar */
+nav {
+    position: relative; /* REQUIRED for ::after */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #090505;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.4),
+        rgba(255,255,255,0.05)
+    );
+    pointer-events: none;
+}
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #100707;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.nav-links a:hover {
+    color: #c0099b;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.4rem;
+    margin: 2px 0;
+    padding: 15px 30px;
+
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+   text-align: center;
+    
+}
+
+/* Paragraph */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 20px 30px;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(px);
+    -webkit-backdrop-filter: blur(px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+   
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Team Cards */
+.team-card {
+    width: 250px;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.team-card p {
+    margin: 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team {
+        justify-content: center;
+    }
+
+    p {
+        max-width: 100%;
+    }
+}

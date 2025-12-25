@@ -1,0 +1,147 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-image: url('beautiful-nature-landscape-with-black-sandy-beach-ocean.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: #100707;
+}
+
+/* Navigation bar */
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(120deg, rgba(255,255,255,0.4), rgba(255,255,255,0.05));
+    pointer-events: none;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #100707;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #c0099b;
+}
+
+/* Main content area */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+/* Contact form container */
+.contact-container {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Form heading */
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #100707;
+}
+
+/* Form fields */
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #c0099b;
+    box-shadow: 0 0 5px rgba(192, 0, 155, 0.5);
+}
+
+/* Textarea height */
+.contact-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button */
+.contact-container button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffd700;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-container button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 30px 10px;
+    }
+
+    .contact-container {
+        padding: 30px 20px;
+    }
+}
